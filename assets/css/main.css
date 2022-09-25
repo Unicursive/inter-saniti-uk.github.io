@@ -855,12 +855,13 @@ section {
 
 .call-to-action h3 {
   color: #fff;
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 35px;
+  font-weight: 900;
   margin-bottom: 20px;
 }
 
 .call-to-action p {
+  text-align: center;
   color: #fff;
   margin-bottom: 20px;
 }
@@ -1474,6 +1475,77 @@ section {
   font-size: 18px;
   margin: 0 2px;
 }
+/* ---------------------------------------------------------------- */
+
+.team .teamMember {
+  text-align: center;
+  background: #fff;
+  border-radius: 142px;
+  padding: 15px;
+  overflow: hidden;
+  box-shadow: 0px 0px 7px rgb(0 0 0 / 20%);
+}
+
+.team .teamMember img {
+  border-radius: 114px;
+  overflow: hidden;
+}
+
+.team .teamMember .member-content {
+  padding: 0 20px 30px 20px;
+}
+
+.team .teamMember h4 {
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 2px;
+  font-size: 20px;
+}
+
+.team .teamMember span {
+  font-style: italic;
+  display: block;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.team .teamMember p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #6c757d;
+}
+
+.team .teamMember .social {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.team .teamMember .social a {
+  color: #a2a2a2;
+  transition: 0.3s;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bbbbbb;
+}
+
+.team .teamMember .social a:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.team .teamMember .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+/* ---------------------------------------------------------------- */
 
 /*--------------------------------------------------------------
 # Pricing Section
