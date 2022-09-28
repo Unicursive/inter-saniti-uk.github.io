@@ -23,6 +23,12 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!--Jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--Floating WhatsApp css-->
+<link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+<!--Floating WhatsApp javascript-->
+<script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>  
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -45,22 +51,30 @@
       </a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html#hero">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#teams">Teams</a></li>
-          <li><a href="index.html#courses">Courses</a></li>
-          <li><a href="career.html#career">Career</a></li>
-          <li class="dropdown"><a href=""><span>Scholarship</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li ><a href="index.html#hero">Home</a></li>
+          
+          <li ><a class="line" href="index.html#about">About</a></li>
+         
+          <li ><a class="line" href="index.html#services">Services</a></li>
+          
+          <li><a class="line" href="index.html#teams">Teams</a></li>
+        
+          <li ><a class="line" href="index.html#courses">Courses</a></li>
+          
+          <li ><a class="line" href="career.html">Career</a></li>
+         
+          <li class="dropdown"><a class="line" href="ScholarshipUK.html"><span>Scholarship</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="#">UK</a></li>
-               <li><a href="#">Australia</a></li>
-               <li><a href="#">Canada</a></li>
+              <li><a href="ScholarshipUK.html">UK</a></li>
+               <!-- <li><a href="#">Australia</a></li>
+               <li><a href="#">Canada</a></li> -->
             </ul>
           </li>
-          <li><a href="index.html#contact">Contact</a></li>
+   
+          <li><a class="line" href="index.html#contact">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
+      
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
@@ -187,10 +201,10 @@
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">ContactUs</a></li>
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#about">About us</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#contact">ContactUs</a></li>
           </ul>
         </div>
 
@@ -221,9 +235,61 @@
     </div>
 
   </footer><!-- End Footer -->
+  <a id='send-it' class='blantershow-chat d-flex align-items-center justify-content-center' href='javascript:void'  title='Show Chat'><i class="bi bi-whatsapp"></i></a>
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
+  <script>
+    /* Whatsapp Chat Widget by www.bloggermix.com */
+ $(document).on("click", "#send-it", function() {
+   var a = "Hi";
+   if ("" != a) {
+     var b = $("#get-number").text(),
+       c = "Hi",
+       d = "https://web.whatsapp.com/send",
+       e = b,
+       f = "&text=" + c;
+     if (
+       /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+         navigator.userAgent
+       )
+     )
+       var d = "whatsapp://send";
+     var g = d + "?phone=+447435799020" + e + f;
+     window.open(g, "_blank");
+   }
+ }),
+   $(document).on("click", ".informasi", function() {
+     (document.getElementById("get-number").innerHTML = $(this)
+       .children(".my-number")
+       .text()),
+       $(".start-chat,.get-new")
+         .addClass("show")
+         .removeClass("hide"),
+       $(".home-chat,.head-home")
+         .addClass("hide")
+         .removeClass("show"),
+       (document.getElementById("get-nama").innerHTML = $(this)
+         .children(".info-chat")
+         .children(".chat-nama")
+         .text()),
+       (document.getElementById("get-label").innerHTML = $(this)
+         .children(".info-chat")
+         .children(".chat-label")
+         .text());
+   }),
+   $(document).on("click", ".close-chat", function() {
+     $("#whatsapp-chat")
+       .addClass("hide")
+       .removeClass("show");
+   }),
+   $(document).on("click", ".blantershow-chat", function() {
+     $("#whatsapp-chat")
+       .addClass("show")
+       .removeClass("hide");
+   });
+ 
+   </script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
