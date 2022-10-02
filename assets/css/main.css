@@ -51,6 +51,14 @@ p{
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
+.header-menu{
+  color:white;
+  font-size:28px;
+  font-weight:600;
+  margin-top:-32px:
+  padding-bottom:6px;
+  
+}
 section {
   padding: 60px 0;
   overflow: hidden;
