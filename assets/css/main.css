@@ -51,12 +51,22 @@ p{
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
+#header{
+  background-color: white;
+}
+.navClose{
+  color: #000 !important;
+}
+.footerlogoImg{
+  background-color: white;
+}
 .header-menu{
   color:white;
   font-size:28px;
   font-weight:600;
   margin-top:-32px;
   padding-bottom:6px;
+  padding-left: 16px;
   
 }
 section {
@@ -243,11 +253,11 @@ a.blantershow-chat{
       a#send-it{
         color:#23ab23;
         width:40px;
-        
         font-weight:700;
         padding:8px;
-        background:whitesmoke;
-        border-radius:10px
+        padding-left: 18px;
+        background: white;
+        border-radius: 21px;
       }.first-msg{background:#f5f5f5;padding:30px;text-align:center}.first-msg span{background:#e2e2e2;color:#333;font-size:14.2px;line-height:1.7;border-radius:10px;padding:15px 20px;display:inline-block}.start-chat .blanter-msg{display:flex}#get-number{display:none}a.close-chat{position:absolute;top:5px;right:15px;color:#fff;font-size:30px}@keyframes showhide{from{transform:scale(.5);opacity:0}}@keyframes showchat{from{transform:scale(0);opacity:0}}@media screen and (max-width:480px){#whatsapp-chat{width:auto;left:5%;right:5%;font-size:80%}}.hide{display:none;animation-name:showhide;animation-duration:1.5s;transform:scale(1);opacity:1}.show{display:block;animation-name:showhide;animation-duration:1.5s;transform:scale(1);opacity:1}
 
 
@@ -376,7 +386,7 @@ a.blantershow-chat{
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 60px;
   margin-right: 6px;
 }
 
@@ -385,7 +395,7 @@ a.blantershow-chat{
   margin: 0;
   font-weight: 600;
   letter-spacing: 0.8px;
-  color: #fff;
+  /* color: #fff; */
   font-family: var(--font-primary);
 }
 
@@ -438,7 +448,7 @@ section {
     font-family: var(--font-secondary);
     font-size: 16px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.6);
+    /* color: rgba(255, 255, 255, 0.6); */
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
@@ -475,7 +485,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    /* color: #fff; */
   }
 
   .navbar .dropdown ul {
